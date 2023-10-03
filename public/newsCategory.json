@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "photo": "https://i.ibb.co/C6y9ZNR/1.png",
+        "title": "Bayern Slams Authorities Over Flight Delay to Club World Cup",
+        "category": "Sports",
+        "date": "2023-10-03"
+    },
+    {
+        "id": 2,
+        "photo": "https://i.ibb.co/Np7GSrw/2.png",
+        "title": "Bayern Slams Authorities Over Flight Delay to Club World Cup",
+        "category": "Sports",
+        "date": "2023-10-04"
+    },
+    {
+        "id": 3,
+        "photo": "https://i.ibb.co/rfZT9xm/3.png",
+        "title": "Bayern Slams Authorities Over Flight Delay to Club World Cup",
+        "category": "Sports",
+        "date": "2023-10-05"
+    }
+]

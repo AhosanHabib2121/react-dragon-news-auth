@@ -6,7 +6,7 @@ import BreakingNews from "./BreakingNews";
 
 const Home = () => {
     return (
-        <div>
+        <div className=" mb-5">
             <Header />
             <BreakingNews/>
             <Navbar/>
@@ -15,7 +15,7 @@ const Home = () => {
                    <LeftSideNavbar/>
                 </div>
                 <div className=" md:col-span-2">
-                    <h2 className=" text-4xl">News coming soon</h2>
+                    <h2 className="text-2xl font-semibold text-[#403F3F]">News coming soon</h2>
                 </div>
                 <div>
                     <RightSideNavbar/>

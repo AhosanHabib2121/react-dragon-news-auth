@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                 </label>
                 <Link to='/login'>
-                    <button className=" btn bg-[#403F3F] text-white">Login</button>
+                    <button className=" px-5 py-2 rounded-lg  bg-[#403F3F] text-white">Login</button>
                 </Link>
             </div>
         </div>
