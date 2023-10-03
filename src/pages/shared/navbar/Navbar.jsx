@@ -6,9 +6,10 @@ const Navbar = () => {
         <li><NavLink to='/' className=" mr-2">Home</NavLink></li>
         <li><NavLink to='/about' className=" mr-2">About</NavLink></li>
         <li><NavLink to='/career' className=" mr-2">Career</NavLink></li>
+        {/* <li><NavLink to='/login' className=" mr-2">Login</NavLink></li> */}
     </>
     return (
-        <div className="navbar bg-base-100 mb-16">
+        <div className="navbar py-4">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">

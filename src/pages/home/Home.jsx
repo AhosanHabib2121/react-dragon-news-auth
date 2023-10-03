@@ -6,11 +6,14 @@ import BreakingNews from "./BreakingNews";
 
 const Home = () => {
     return (
-        <div className=" mb-5">
+        <div className=" max-w-6xl mx-auto mb-5 px-4 md:px-0">
+            {/* header section here */}
             <Header />
-            <BreakingNews/>
+            {/* breaking news section here */}
+            <BreakingNews />
+            {/* navbar section here */}
             <Navbar/>
-            <div className=" grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div className=" grid grid-cols-1 md:grid-cols-4 gap-6 mt-16">
                 <div>
                    <LeftSideNavbar/>
                 </div>
