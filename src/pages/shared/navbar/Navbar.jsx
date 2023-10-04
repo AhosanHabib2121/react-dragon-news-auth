@@ -1,13 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import userDefaultPhoto from "../../../assets/user.png"
+import { useContext } from "react";
+import { AuthContext } from "../../../authProvider/AuthProvider";
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext)
+    
     const navLink = <>
         <li><NavLink to='/' className=" mr-2">Home</NavLink></li>
         <li><NavLink to='/about' className=" mr-2">About</NavLink></li>
         <li><NavLink to='/career' className=" mr-2">Career</NavLink></li>
         {/* <li><NavLink to='/login' className=" mr-2">Login</NavLink></li> */}
     </>
+    const handleSignOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
+
     return (
         <div className="navbar py-4">
             <div className="navbar-start">
@@ -31,9 +41,14 @@ const Navbar = () => {
                         <img  src={userDefaultPhoto} alt="not found"/>
                     </div>
                 </label>
-                <Link to='/login'>
+
+                {
+                    user ?<button onClick={handleSignOut} className=" px-5 py-2 rounded-lg  bg-[#403F3F] text-white">Sign Out</button>
+                    :<Link to='/login'>
                     <button className=" px-5 py-2 rounded-lg  bg-[#403F3F] text-white">Login</button>
                 </Link>
+                }
+                
             </div>
         </div>
     );
