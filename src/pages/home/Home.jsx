@@ -21,7 +21,7 @@ const Home = () => {
                 <div>
                    <LeftSideNavbar/>
                 </div>
-                <div className=" md:col-span-2 ">
+                <div className=" md:col-span-2 overflow-y-auto  h-[260vh]">
                     {
                         newsData.map(singleNews => <NewsCard key={singleNews._id} singleNews={ singleNews } />)
                     }
